@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+minesweeper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 480px;
+}
+
+mine {
+  transition: all.25s;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: #00bfff;
+  cursor: pointer;
+  border: 2px outset buttonface;
+}
+
+mine:hover {
+  background: yellow;
+}
+
+mine.danger {
+  background: red;
+}
+
+mine.peace {
+  background: green;
+}
